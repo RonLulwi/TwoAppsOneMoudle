@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    tools:context=".ActivityStatsCommon">
+
+
+    <TextView
+        android:id="@+id/stats_LBL_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Stats"
+        android:layout_marginBottom="40dp"
+        android:textSize="50sp"/>
+
+    <LinearLayout
+        android:id="@+id/stats_LBL_subTitles"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@id/stats_LBL_title"
+        android:layout_marginBottom="40dp">
+
+        <TextView
+            android:id="@+id/stats_LBL_tableTitle"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/stats_table_title"
+            android:gravity="center"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="Date"
+            android:gravity="center"
+            android:textSize="25sp" />
+
+
+    </LinearLayout>
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_below="@id/stats_LBL_subTitles">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/stats_RSV_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </FrameLayout>
+
+
+
+    <TextView
+        android:id="@+id/stats_LBL_balance"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Balance: "
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:textSize="25sp" />
+</RelativeLayout>

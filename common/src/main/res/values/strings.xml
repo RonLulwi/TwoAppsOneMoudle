@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">some name</string>
+    <string name="stats_table_title">some stats table title</string>
+</resources>
